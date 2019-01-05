@@ -15,7 +15,8 @@ Implement a tip calculator using objects and loops:
 */
 
 var tipsJohn = {  // We create an object by the litteral way
- // We create some properties related to our object  
+                  // We create some properties related to our object 
+fullName: "John Smith",  
 billsValues: [124, 48, 268, 180, 42],   
 tipsPaid: [], // We create a empty array where we will store differents amounts of tips paid by John
 finalPaidAmount: [], // We create also a empty array where we will store final paid amounts (bill+tips)
@@ -40,7 +41,8 @@ tipsJohn.calcTip(); // We call our tipCalculator function for John
 console.log("John and his family paid the following tips in USD: " + tipsJohn.tipsPaid + '.' + ' '+ "John paid the following amounts with tips included in each bill " + tipsJohn.finalPaidAmount + ' .');
 
 var tipsMark = {  // We apply the same code for Mark
-  
+
+fullName: "Mark Gandolfi",  
 billsValues: [77, 375, 110, 45], 
 tipsPaid: [],
 finalPaidAmount: [],
@@ -92,3 +94,4 @@ if (averageTips(tipsMark.tipsPaid) > averageTips(tipsJohn.tipsPaid)) {     // We
   } else {
     console.log("John and Mark paid the same tips average");
 }
+
